@@ -11,7 +11,6 @@
 
 // if(number1 < number2)
 // {
-
 //    Console.WriteLine(number2);
 // }
 // else if(number1 > number2)
@@ -84,6 +83,18 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
+// 1 решение
+// Console.WriteLine("Введите чило: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int size = 2;
+
+// while(size <= number)
+// {
+// Console.WriteLine(size);
+// size = size + 2;
+// }
+
+// 2 решение
 // Console.WriteLine("Введите чило: ");
 // int number = Convert.ToInt32(Console.ReadLine());
 // int i = 2;
