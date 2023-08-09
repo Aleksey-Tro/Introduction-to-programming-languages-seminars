@@ -59,3 +59,63 @@
 // {
 //    Console.WriteLine("Введите номер от 1 до 4");
 // }
+
+
+// Console.WriteLine("Введите число от 1 до 4");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// switch(number)
+// {
+//    case 1:
+//    {
+//    Console.WriteLine("X > 0, Y > 0");
+//    break;
+//    }
+//    case 2:
+//    {
+//    Console.WriteLine("X < 0, Y > 0");
+//    break;
+//    }
+//    case 3:
+//    {
+//    Console.WriteLine("X < 0, Y < 0");
+//    break;
+//    }
+// case 4:
+//    {
+//    Console.WriteLine("X > 0, Y < 0");
+//    break;
+//    }
+// default:
+//    {
+//    Console.WriteLine("Введите номер от 1 до 4");
+//    break;
+//    }
+// }
+
+
+// Console.WriteLine("Введите число X1");
+// int X1 = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Введите число Y1");
+// int Y1 = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Введите число X1");
+// int X2 = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Введите число Y2");
+// int Y2 = Convert.ToInt32(Console.ReadLine());
+
+// double number = Math.Sqrt(Math.Pow((X2 - X1), 2) + Math.Pow((Y2-Y1), 2));
+// Console.WriteLine(number);
+
+
+// Console.WriteLine("Введите число ");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// for(int i = 1 ; i <= number; i++)
+// {
+//    Console.WriteLine(Math.Pow(i, 2));
+// }
+
+
