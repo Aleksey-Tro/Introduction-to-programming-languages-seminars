@@ -56,8 +56,8 @@
 // Console.WriteLine("Введите число");
 // int number = Convert.ToInt32(Console.ReadLine());
 
-// // int number = new Random().Next(1, 8);
-// // Console.WriteLine(number);
+// int number = new Random().Next(1, 8);
+// Console.WriteLine(number);
 
 // if(number > 5 && number < 8)
 // {
