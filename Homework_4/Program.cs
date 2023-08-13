@@ -65,17 +65,59 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-
+// // Первое решение
 // int [] array = new int[8];
 
 // void GetArray()
 // {
 //    for (int i = 0; i < array.Length; i++)
 //    {
-//       array[i] = new Random().Next(0, 1001);
-//       Console.Write(array[i] + " ");
+//       array[i] = new Random().Next(-2, 3);
+//       if(array[i] != 0) // 0 убираем из списка, так как массив изначально заполнен ими
+//       {
+//          Console.Write(array[i] + " ");
+//       }
 //    }
 // }
 
 // GetArray();
 
+
+// // Второе решение, только оно будет заполнять массив в обратном
+// // порядке, и принимать не больше восьмизначного числа
+
+// Console.WriteLine("Введите восьмизначное число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int [] array = new int[8];
+
+// int Array()
+// {
+//    int i = 0;
+//    if(number > 0)
+//    {
+//       while(number > 0 && number < 99999999)
+//       {
+//       array[i] = number % 10;
+//       number = number / 10;
+//       Console.Write(array[i] + " ");
+//       i++;
+//       }
+//    }
+//    else if(number == 0)
+//    {
+//       Console.WriteLine("Массив и так заполнен 0, введите другое число");
+//    }
+//    else
+//    {
+//       while(number < 0 && number > -99999999)
+//       {
+//       array[i] = number % 10;
+//       number = number / 10;
+//       Console.Write(array[i] + " ");
+//       i++;
+//       }
+//    }
+//    return number;
+// }
+
+// Console.WriteLine(Array());
