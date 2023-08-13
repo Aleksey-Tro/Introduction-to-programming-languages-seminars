@@ -46,21 +46,39 @@
 // Console.WriteLine(N());
 
 
-// Задача 28: Напишите программу, которая принимает на 
-// вход число N и выдает произведение чисел от 1 до N.
+// // Задача 28: Напишите программу, которая принимает на 
+// // вход число N и выдает произведение чисел от 1 до N.
 
-Console.WriteLine("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
 
-int Num()
-{
-   int result = 1;
-   for (int i = 1; i <= number; i++)
-   {
-      result = result * i;
-   }
-   return result;
-}
+// int Num()
+// {
+//    int result = 1;
+//    for (int i = 1; i <= number; i++)
+//    {
+//       result = result * i;
+//    }
+//    return result;
+// }
 
-int n = Num();
-Console.WriteLine(n);
+// int n = Num();
+// Console.WriteLine(n);
+
+
+
+// // Задача 30: напишите программу, которая выводит массив из 8 
+// // элементов, заполненный нулями и еденицами в случайном порядке.
+
+// int [] array = new int[8];
+
+// void GetArray()
+// {
+//    for (int i = 0; i < array.Length; i++)
+//    {
+//       array[i] = new Random().Next(0, 2);
+//       Console.Write(array[i] + " ");
+//    }
+// }
+
+// GetArray();
