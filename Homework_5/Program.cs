@@ -50,31 +50,30 @@
 // Console.WriteLine(result);
 
 
-// Задача 38: Задайте массив вещественных чисел.
-// Найдите разницу между максимальным и 
-// минимальным элементов массива.
-// [3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
+// // Задача 38: Задайте массив вещественных чисел.
+// // Найдите разницу между максимальным и 
+// // минимальным элементов массива.
+// // [3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
 
 
 
-Console.WriteLine("Введите размер массива:");
-int len = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите размер массива:");
+// int len = Convert.ToInt32(Console.ReadLine());
 
-double[] array = new double[len];
-double result = 0;
-Random rand = new Random();
+// double[] array = new double[len];
+// double result = 0;
 
-double max = 0;
-double min = 0;
+// double max = 0;
+// double min = 0;
 
-for (int i = 0; i < array.Length; i++)
-{
-   array[i] = rand.Next(-10, 10) + rand.NextDouble();
-   Console.Write(array[i] + " ");
-   if (array[i] > max) max = array[i];
-   else if (array[i] < min) min = array[i];
-   result = (max - min);
-}
+// for (int i = 0; i < array.Length; i++)
+// {
+//    array[i] = new Random().Next(-10, 10) + new Random().NextDouble(); // можно было использовать Random rand = new Random();
+//    Console.Write(array[i] + " ");
+//    if (array[i] > max) max = array[i];
+//    else if (array[i] < min) min = array[i];
+//    result = max - min;
+// }
 
-Console.WriteLine(result);
+// Console.WriteLine(result);
 
