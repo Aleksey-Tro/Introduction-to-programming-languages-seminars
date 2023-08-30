@@ -68,11 +68,19 @@ int[] array = new int[num];
 for (int i = 0; i < array.Length; i++)
 {
    array[i] = new Random().Next(-10, 11);
-   Console.WriteLine(array[i] + " ");
+   Console.Write(array[i] + " ");
 }
+
+Console.WriteLine();
 
 for (int i = 0; i < array.Length / 2; i++)
 {
-   
-   Console.WriteLine(array[i] + " ");
+   int n = array[i];
+   array[i] = array[array.Length - 1 - i];
+   array[array.Length - 1 - i] = n;
+}
+
+for (int i = 0; i < array.Length; i++)
+{
+   Console.Write(array[i] + " ");
 }
