@@ -57,30 +57,50 @@
 // }
 
 
-// Задача 39:Напишите программу, которая перевернет
-// одномерный массив
+// // Задача 39:Напишите программу, которая перевернет
+// // одномерный массив
 
-Console.WriteLine("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-int[] array = new int[num];
+// int[] array = new int[num];
 
-for (int i = 0; i < array.Length; i++)
-{
-   array[i] = new Random().Next(-10, 11);
-   Console.Write(array[i] + " ");
-}
+// for (int i = 0; i < array.Length; i++)
+// {
+//    array[i] = new Random().Next(-10, 11);
+//    Console.Write(array[i] + " ");
+// }
 
-Console.WriteLine();
+// Console.WriteLine();
 
-for (int i = 0; i < array.Length / 2; i++)
-{
-   int n = array[i];
-   array[i] = array[array.Length - 1 - i];
-   array[array.Length - 1 - i] = n;
-}
+// for (int i = 0; i < array.Length / 2; i++)
+// {
+//    int n = array[i];
+//    array[i] = array[array.Length - 1 - i];
+//    array[array.Length - 1 - i] = n;
+// }
 
-for (int i = 0; i < array.Length; i++)
-{
-   Console.Write(array[i] + " ");
-}
+// for (int i = 0; i < array.Length; i++)
+// {
+//    Console.Write(array[i] + " ");
+// }
+
+
+// // Задача 45: Напишите программу которая будет создавать
+// // копию массива с помощью поэлементного копирования
+
+// int[] array = new int[] { 1, 2, 3, 4, 5 };
+// int[] copyArray = new int[array.Length];
+
+// void CopyArray()
+// {
+//    for (int i = 0; i < copyArray.Length; i++)
+//    {
+//       copyArray[i] = array[i];
+//       Console.Write(copyArray[i] + " ");
+//    }
+// }
+
+// CopyArray();
+
+
