@@ -300,34 +300,113 @@
 
 
 
-// Задача 62. Напишите программу, которая заполнит 
-// спирально массив 4 на 4.
-// Например, на выходе получается вот такой массив:
-// 01 02 03 04
-// 12 13 14 05
-// 11 16 15 06
-// 10 09 08 07
+// // Задача 62. Напишите программу, которая заполнит 
+// // спирально массив 4 на 4.
+// // Например, на выходе получается вот такой массив:
+// // 01 02 03 04
+// // 12 13 14 05
+// // 11 16 15 06
+// // 10 09 08 07
 
-int[,] FillArray(int[,] matrix) 
-{
-   for (int i = 0; i < length; i++)
-   {
-      
-   }
-   return matrix;
-}
+// void FillArray(int[,] matrix) // метод заполнения массива по спирали
+// {
+//     int SizeN = matrix.GetLength(1);
+//     int SizeM = matrix.GetLength(0);
+//     int SizeN1 = -1;
+//     int SizeM1 = -1;
+//     int length = matrix.GetLength(1)+matrix.GetLength(0);
+//     int i = 0;
+//     int j = 0;
 
-void PrintArray(int[,] matrix) 
-{
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            Console.Write(matrix[i, j] + " ");
-        }
-        Console.WriteLine();
-    }
-}
+//     int n = 1;
+//     int m = 0;
+//     int temp = 0;
+//     int val = 1;
+//     for (int k = 0; k < length; k++)
+//     {
+//         if (n == 1)
+//         {
+//             while (j < SizeN)
+//             {
+//                 matrix[i, j] = val;
+//                 Console.Write(matrix[i, j] + " ");
+//                 val++;
+//                 j++;
+//             }
+//             j--;
+//             SizeM--;
+//             SizeM1++;
+//             i++;
+//             temp = n;
+//             n = m;
+//             m = -temp;
+//         }
+//         else if (m == -1)
+//         {
+//             while (i < SizeM)
+//             {
+//                 matrix[i, j] = val;
+//                 Console.Write(matrix[i, j] + " ");
+//                 val++;
+//                 i++;
+//             }
+//             i--;
+//             SizeN--;
+//             SizeN1++;
+//             j--;
+//             temp = n;
+//             n = m;
+//             m = -temp;
+//         }
+//         else if (n == -1)
+//         {
+//             while (j > SizeN1)
+//             {
+//                 matrix[i, j] = val;
+//                 Console.Write(matrix[i, j] + " ");
+//                 val++;
+//                 j--;
+//             }
+//             j++;
+//             SizeM--;
+//             SizeM1++;
+//             i--;
+//             temp = n;
+//             n = m;
+//             m = -temp;
+//         }
+//         else if (m == 1)
+//         {
+//             while (i > SizeM1)
+//             {
+//                 matrix[i, j] = val;
+//                 Console.Write(matrix[i, j] + " ");
+//                 val++;
+//                 i--;
+//             }
+//             i++;
+//             SizeN--;
+//             SizeN1++;
+//             j++;
+//             temp = n;
+//             n = m;
+//             m = -temp;
+//         }
+//     }
+//     return matrix;
+// }
 
-int[,] CoilMatrix = new int[4, 4];
-PrintArray(FillArray(CoilMatrix));
+// void PrintArray(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             Console.Write(matrix[i, j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// int[,] CoilMatrix = new int[5, 5];
+// PrintArray(FillArray(CoilMatrix));
